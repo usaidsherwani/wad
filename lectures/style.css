@@ -1,0 +1,18 @@
+#main {
+
+    margin: auto;
+    text-align: center;
+	
+}
+.pet_picture {
+	
+    border: dashed red;
+    max-width: 400px;
+    max-height: 300px;
+    margin:auto;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.52);
+	box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.52);
+
+}
