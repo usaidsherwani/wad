@@ -27,16 +27,28 @@ var quizOver = false;
 displayCurrentQuestion();
 document.getElementById("quiz-message").style.display = 'none';
 function displayNext() {
-    /*Write your code here */
+    
 }
 
 function displayCurrentQuestion() {
-    /*Write your code here */
+    
+	document.getElementById('question').innerText=questions[currentQuestion].question;
+	id.innerText = '<p>' + questions[currentQuestion].question + '<p>';
+
+	var choiseListId = document.getElementById("choice-list");
+	for(var i = 0; i < questions[currentQuestion].choices.length; i++) {
+        choiceListId.innerHTML+= '<li>' + '<input type="radio" name="ch">' + question[currentQuestion].choices[i] + '<li>';
+
+    }
+
+    currentQuestion++;
+	
 }
 
 function resetQuiz() {
     currentQuestion = 0;
     correctAnswers = 0;
+    displayCurrentQuestion()
     hideScore();
 }
 function displayScore() {
